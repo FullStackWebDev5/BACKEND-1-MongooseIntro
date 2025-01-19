@@ -54,7 +54,7 @@ app.post('/students', async (req, res) => {
 })
 
 app.listen(3000, () => {
-  mongoose.connect('mongodb://127.0.0.1:27017/test')
+  mongoose.connect(process.env.MONGODB_URL)
     .then(() => console.log('Server is ready ro use ✅'))
     .catch((error) => console.error('DB connection error', error))
 })
