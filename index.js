@@ -174,7 +174,7 @@ app.delete('/students/:id', async (req, res) => {
 
 app.listen(3000, () => {
   mongoose.connect(process.env.MONGODB_URL)
-    .then(() => console.log('Server is ready ro use ✅'))
+    .then(() => console.log('Server is ready to use ✅'))
     .catch((error) => console.error('DB connection error', error))
 })
 
